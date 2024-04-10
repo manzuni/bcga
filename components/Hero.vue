@@ -56,10 +56,10 @@ import OpenInGoogleMaps from "~/components/OpenInGoogleMaps.vue";
         </div>
 
         <a
-          href="#"
+          href="#despre-noi"
           class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
         >
-          Contactează-ne
+          Despre noi
           <svg
             class="w-5 h-5 ml-2 -mr-1"
             fill="#9b2c2c"

@@ -3,8 +3,26 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* Hide scrollbar for the whole page */
+html {
+  overflow-y: scroll;
+  scrollbar-width: none; /* For Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
 /* Your additional styles go here */
 #__nuxt {
   /* padding: 1rem; */
   min-height: 100vh;
 }
+
+/* body {
+  font-family: "ADLaM Display", system-ui, sans-serif;
+}
+
+.adlam-display-class {
+  font-family: "ADLaM Display", system-ui, sans-serif;
+} */

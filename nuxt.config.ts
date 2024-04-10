@@ -12,8 +12,13 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/content", "@nuxt/image"],
+  modules: ["@nuxt/content", "@nuxt/image", "@nuxtjs/google-fonts"],
   routeRules: {
     "/": { prerender: true, ssr: false },
+  },
+  googleFonts: {
+    families: {
+      "ADLaM Display": true,
+    },
   },
 });

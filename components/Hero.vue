@@ -76,7 +76,7 @@ const navigation = [
         </a>
         <a
           href="#"
-          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 hover:bg-gray-100 rounded-lg focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 bg-gray-100 hover:bg-gray-300 rounded-lg focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

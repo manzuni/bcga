@@ -45,6 +45,7 @@ watch(
               alt="BCGA"
             />
           </div>
+
           <div class="hidden sm:ml-6 sm:block w-full">
             <div class="flex space-x-4 justify-end">
               <a

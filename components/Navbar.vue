@@ -148,13 +148,3 @@ watch(
     </DisclosurePanel>
   </Disclosure>
 </template>
-
-<style>
-#navbar {
-  font-family: "ADLaM Display", system-ui, sans-serif;
-}
-
-.adlam-display-class {
-  font-family: "ADLaM Display", system-ui, sans-serif;
-}
-</style>

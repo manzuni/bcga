@@ -18,7 +18,7 @@ import OpenInGoogleMaps from "~/components/OpenInGoogleMaps.vue";
         class="h-full content-center flex flex-wrap justify-center lg:justify-start w-full m-0 lg:mr-auto place-self-center lg:col-span-6 max-w-[34rem]"
       >
         <h1
-          class="max-w-[20rem] text-center lg:text-left md:max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+          class="max-w-[20rem] md:max-w-[24rem] lg:max-w-[30rem] text-center lg:text-left mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
         >
           Biserica Creștină Golgota - Aveley
         </h1>
@@ -40,9 +40,9 @@ import OpenInGoogleMaps from "~/components/OpenInGoogleMaps.vue";
           </svg>
 
           <div
-            class="relative z-1 max-w-[20rem] md:max-w-[30rem] text-center lg:text-left"
+            class="relative z-1 max-w-[20rem] md:max-w-[26rem] text-center lg:text-left"
           >
-            <p class="text-gray-800 sm:text-xl dark:text-white">
+            <p class="text-gray-800 md:text-xl dark:text-white">
               <em>
                 Căci n-am avut de gând să știu între voi altceva decât pe Isus
                 Hristos, și pe El răstignit - 1 Corinteni 2:2

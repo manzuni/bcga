@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     families: {
-      "ADLaM Display": true,
+      "Open Sans": true,
     },
   },
 });

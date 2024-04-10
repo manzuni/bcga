@@ -28,5 +28,10 @@ import Footer from "~/components/Footer.vue";
 body,
 html {
   height: 100%;
+  font-family: "Open Sans", system-ui, sans-serif;
+}
+
+.open-sans-class {
+  font-family: "Open Sans", system-ui, sans-serif;
 }
 </style>

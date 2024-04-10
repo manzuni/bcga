@@ -1,12 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: [
-    'assets/main.css',
-  ],
+  css: ["assets/main.css"],
   postcss: {
     plugins: {
-      tailwindcss: './tailwind.config.js',
+      tailwindcss: "./tailwind.config.js",
       autoprefixer: {},
     },
   },

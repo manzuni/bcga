@@ -18,8 +18,11 @@ fetchContent();
   </div>
 
   <div class="gallery">
-    <div v-for="(image, index) in content.gallery" :key="index">
-      <img :src="image.image" :alt="`Gallery image ${index + 1}`" />
-    </div>
+    <img
+      v-for="item in content.gallery"
+      :src="item.image"
+      :alt="`Gallery Image`"
+      :key="item.image"
+    />
   </div>
 </template>

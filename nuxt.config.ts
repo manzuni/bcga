@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   image: {
     dir: "images",
+    format: ["webp"],
   },
   css: ["assets/main.css"],
   postcss: {

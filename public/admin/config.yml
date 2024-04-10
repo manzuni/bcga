@@ -1,18 +1,22 @@
 backend:
-  name: git-gateway # Adjust based on your backend
-  branch: main # Default GitHub branch
+  name: test-repo # test-repo / git-gateway
+  branch: main 
 
-media_folder: static/img # Adjust if your media path differs
-public_folder: /img # Adjust according to media_folder
+media_folder: static/img 
+public_folder: /img 
 
 collections:
-  - name: "pages" # A name for your collection
-    label: "Pages" # A label for your collection
+  - name: "pages"
+    label: "Pages"
     files:
-      - file: "content/index.md" # Path to your Markdown file
+      - file: "content/index.md"
         label: "Homepage"
         name: "homepage"
-        fields: # Define the fields you want to be editable
+        fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Header", name: "header", widget: "string"}
-          # Add more fields as needed
+          - label: "Gallery"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}

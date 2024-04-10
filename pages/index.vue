@@ -16,4 +16,10 @@ fetchContent();
     <h1>{{ content.title }}</h1>
     <h2>{{ content.header }}</h2>
   </div>
+
+  <div class="gallery">
+    <div v-for="(image, index) in content.gallery" :key="index">
+      <img :src="image.image" :alt="`Gallery image ${index + 1}`" />
+    </div>
+  </div>
 </template>

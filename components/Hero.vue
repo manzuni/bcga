@@ -16,7 +16,7 @@ const navigation = [
       class="grid max-w-screen-xl p-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
     >
       <div
-        class="flex flex-wrap justify-center lg:justify-start w-full m-0 lg:mr-auto place-self-center lg:col-span-6 max-w-[34rem]"
+        class="h-full content-center flex flex-wrap justify-center lg:justify-start w-full m-0 lg:mr-auto place-self-center lg:col-span-6 max-w-[34rem]"
       >
         <h1
           class="max-w-[20rem] text-center lg:text-left md:max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"

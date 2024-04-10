@@ -1,28 +1,17 @@
 <script setup>
-import { ref } from "vue";
-
-const content = ref({});
-
-const fetchContent = async () => {
-  const data = useContent();
-  content.value = data.page.value;
-};
-
-fetchContent();
+const { data } = await useAsyncData("index", () => queryContent("/").findOne());
 </script>
 
 <template>
   <div class="flex flex-col">
-    <h1>{{ content.title }}</h1>
-    <h2>{{ content.header }}</h2>
+    <!-- {{ console.log(data.gallery) }} -->
+    <h1>{{ data.title }}</h1>
+    <h2>{{ data.header }}</h2>
   </div>
 
-  <div class="gallery">
-    <img
-      v-for="item in content.gallery"
-      :src="item.image"
-      :alt="`Gallery Image`"
-      :key="item.image"
-    />
+  <div v-for="(item, index) in data.gallery" :key="index" class="gallery-item">
+    <NuxtImg :src="item.image" />
   </div>
+
+  <NuxtImg src="/gallery/img3.jpg" />
 </template>

@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  image: {
+    dir: "images",
+  },
   css: ["assets/main.css"],
   postcss: {
     plugins: {
@@ -8,8 +11,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/content"],
-  content: {
-    documentDriven: true,
-  },
+  modules: ["@nuxt/content", "@nuxt/image"],
 });

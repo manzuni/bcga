@@ -1,25 +1,18 @@
 backend:
-  name: git-gateway # test-repo to see locally
-  branch: main # Branch to update (optional; defaults to master)
+  name: git-gateway # Adjust based on your backend
+  branch: main # Default GitHub branch
 
-publish_mode: editorial_workflow
-
-media_folder: "assets"
-public_folder: "/public"
+media_folder: static/img # Adjust if your media path differs
+public_folder: /img # Adjust according to media_folder
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    label_singular: "Post"
-    folder: "content/blog"
-    create: true
-    fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "blog-post.template",
-        }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages" # A name for your collection
+    label: "Pages" # A label for your collection
+    files:
+      - file: "content/index.md" # Path to your Markdown file
+        label: "Homepage"
+        name: "homepage"
+        fields: # Define the fields you want to be editable
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          # Add more fields as needed

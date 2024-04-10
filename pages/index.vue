@@ -3,17 +3,30 @@
 // import Carousel from "~/components/Carousel.vue";
 import Hero from "~/components/Hero.vue";
 import Navbar from "~/components/Navbar.vue";
+import Footer from "~/components/Footer.vue";
 </script>
 
 <template>
-  <Navbar />
-  <Hero />
-  <!-- <div class="flex flex-col">
+  <div class="flex flex-col min-h-screen">
+    <Navbar />
+    <main class="flex-grow">
+      <Hero />
+      <!-- <div class="flex flex-col">
     <h1>{{ data.title }}</h1>
     <h2>{{ data.header }}</h2>
   </div> -->
 
-  <!-- <Masonry src="index" />
+      <!-- <Masonry src="index" />
 
   <Carousel /> -->
+    </main>
+    <Footer />
+  </div>
 </template>
+
+<style>
+body,
+html {
+  height: 100%;
+}
+</style>
